@@ -18,8 +18,8 @@ package io.signifai.pubsub_spark.utils;
 
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.googleapis.json.GoogleJsonError;
@@ -35,7 +35,7 @@ import com.google.api.services.pubsub.model.Topic;
 import com.google.common.base.Preconditions;
 
 public class PubsubHelper {
-	private static final Logger logger = LogManager.getLogger(PubsubHelper.class);
+	private static final Logger logger = LoggerFactory.getLogger(PubsubHelper.class);
 
 	private static final String ALREADY_EXISTS = "ALREADY_EXISTS";
 

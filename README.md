@@ -36,6 +36,8 @@ Alternatively one could install the python module on the Apache Spark nodes them
 # How to use
 
 ## Java connector
+To use this receiver, add dependency and also a slf4j implementation such as org.apache.logging.log4j % log4j-slf4j-impl % 2.5.
+
 In order to use this _receiver_, you need to attach your jar.
 
 For instance, when using _spark-shell_:
